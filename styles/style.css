@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "RobotoBold";
+  font-style: normal;
+  font-weight: 700; }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+header {
+  background: url(../img/fjump.png) no-repeat center 65% fixed, url(../img/header.jpg) no-repeat fixed;
+  background-size: 60%, cover;
+  height: 820px; }
+
+/*# sourceMappingURL=style.css.map */
