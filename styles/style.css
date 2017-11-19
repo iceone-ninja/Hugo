@@ -10,24 +10,16 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  min-width: 320px; }
 
 header {
   background: url(../img/fjump.png) no-repeat center fixed, url(../img/header.jpg) no-repeat center fixed;
   background-size: 70%, cover;
   height: 820px; }
 
-/*==========  Desktop First Method  ========== */
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Custom, iPhone Retina */
-/*==========  Mobile First Method  ========== */
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+@media (min-width: 1200px) {
+  header {
+    background-size: 60%, cover; } }
 
 /*# sourceMappingURL=style.css.map */
