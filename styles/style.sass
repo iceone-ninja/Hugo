@@ -9,12 +9,40 @@ body
   flex-direction: column
   justify-content: center
   min-width: 360px
+.container
+  max-width: 1200px
+.i_p0
+  padding: 0
 
 // HEADER
 header
-  background: url(../img/fjump.png) no-repeat center fixed, url(../img/header.jpg) no-repeat center fixed
+  background: url(../img/fjump.png) no-repeat center fixed, url(../img/header.jpg) no-repeat center 80px fixed
   background-size: 70%, cover
-  height: 820px
+  min-height: 900px
+  & nav //NAV
+    height: 80px
+
+.top_menu
+  &_container
+  justify-content: space-between
+  &_social
+    justify-content: flex-start
+    & a
+      text-decoration: none
+      color: $nav-color
+      padding-right: 29px
+      &:hover, &:active
+      text-decoration: none
+  &_logo
+    justify-content: center
+  &_button
+    justify-content: flex-end
+    & i
+      color: $nav-color
+#navbarToggleExternalContent
+  margin-top: 80px
+
+
 // MEDIA
 @import 'media'
 

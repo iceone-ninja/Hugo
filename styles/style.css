@@ -13,10 +13,37 @@ body {
   justify-content: center;
   min-width: 360px; }
 
+.container {
+  max-width: 1200px; }
+
+.i_p0 {
+  padding: 0; }
+
 header {
-  background: url(../img/fjump.png) no-repeat center fixed, url(../img/header.jpg) no-repeat center fixed;
+  background: url(../img/fjump.png) no-repeat center fixed, url(../img/header.jpg) no-repeat center 80px fixed;
   background-size: 70%, cover;
-  height: 820px; }
+  min-height: 900px; }
+  header nav {
+    height: 80px; }
+
+.top_menu {
+  justify-content: space-between; }
+  .top_menu_social {
+    justify-content: flex-start; }
+    .top_menu_social a {
+      text-decoration: none;
+      color: #252525;
+      padding-right: 29px;
+      text-decoration: none; }
+  .top_menu_logo {
+    justify-content: center; }
+  .top_menu_button {
+    justify-content: flex-end; }
+    .top_menu_button i {
+      color: #252525; }
+
+#navbarToggleExternalContent {
+  margin-top: 80px; }
 
 @media (max-width: 575px) {
   header {
@@ -27,6 +54,9 @@ header {
 @media (min-width: 768px) and (max-width: 991px) {
   header {
     background-size: 90%, cover; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {
+    background: url(../img/fjump.png) no-repeat center 350px fixed, url(../img/header.jpg) no-repeat center 80px fixed; } }
 @media (min-width: 1200px) {
   header {
     background-size: 60%, cover; } }

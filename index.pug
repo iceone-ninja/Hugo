@@ -11,12 +11,19 @@ html(lang='en')
     
   body
     header
-      nav.navbar.navbar-light.bg-light.fixed-top
-        .container
-          .row
+      nav.navbar.navbar-light.bg-light.fixed-top.top_menu
+        .container.top_menu_container.i_p0
+          .col.d-flex.top_menu_social
+            a(href="#").fa.fa-twitter
+            a(href="#").fa.fa-facebook
+            a(href="#").fa.fa-cloud
+          .col.d-flex.top_menu_logo
+            a(href="#")
+              img(src="img/logo.png", alt="LOGO")
+          .col.d-flex.top_menu_button
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarToggleExternalContent', aria-controls='navbarToggleExternalContent', aria-expanded='false', aria-label='Toggle navigation')
-              span.navbar-toggler-icon
-      #navbarToggleExternalContent.collapse
+              i.fa.fa-bars.fa-lg(aria-hidden='true')
+      #navbarToggleExternalContent.collapse.fixed-top
         .bg-light
           ul.nav
             li.nav-item
