@@ -35,6 +35,8 @@ header {
       color: #252525;
       padding-right: 29px;
       text-decoration: none; }
+      .top_menu_social a:hover {
+        color: #374290; }
   .top_menu_logo {
     justify-content: center; }
   .top_menu_button {
