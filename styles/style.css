@@ -19,8 +19,24 @@ body {
 .i_p0 {
   padding: 0; }
 
+h2 {
+  font-family: Roboto;
+  color: #242424;
+  font-size: 48px;
+  font-weight: 100;
+  line-height: 30px;
+  text-align: left; }
+
+p {
+  font-family: Roboto;
+  color: #959595;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left; }
+
 header {
-  background: url(../img/fjump.png) no-repeat center fixed, url(../img/header.jpg) no-repeat center 80px fixed;
+  background: url(../img/fjump.png) no-repeat center, url(../img/header.jpg) no-repeat center 80px;
   background-size: 70%, cover;
   min-height: 900px; }
   header nav {
@@ -47,6 +63,29 @@ header {
 #navbarToggleExternalContent {
   margin-top: 80px; }
 
+.featured_album article {
+  max-width: 720px;
+  min-height: 480px;
+  flex-direction: column;
+  padding: 133px 86px 30px; }
+
+.album_container {
+  background: url(../img/webwill.png) no-repeat;
+  background-size: cover;
+  min-height: 480px; }
+  .album_container_cover {
+    background-color: rgba(25, 49, 75, 0.8);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center; }
+
+.album_pic {
+  min-width: 370px;
+  height: 270px;
+  background: url(../img/beat.png) no-repeat left, url(../img/disc.png) no-repeat right;
+  margin-left: 40px; }
+
 @media (max-width: 575px) {
   header {
     background-size: 90%, cover; } }
@@ -58,7 +97,7 @@ header {
     background-size: 90%, cover; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   header {
-    background: url(../img/fjump.png) no-repeat center 350px fixed, url(../img/header.jpg) no-repeat center 80px fixed; } }
+    background: url(../img/fjump.png) no-repeat center 350px, url(../img/header.jpg) no-repeat center 80px; } }
 @media (min-width: 1200px) {
   header {
     background-size: 60%, cover; } }
