@@ -11,13 +11,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 320px; }
+  min-width: 360px; }
 
 header {
   background: url(../img/fjump.png) no-repeat center fixed, url(../img/header.jpg) no-repeat center fixed;
   background-size: 70%, cover;
   height: 820px; }
 
+@media (max-width: 575px) {
+  header {
+    background-size: 90%, cover; } }
+@media (min-width: 576px) and (max-width: 767px) {
+  header {
+    background-size: 90%, cover; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    background-size: 90%, cover; } }
 @media (min-width: 1200px) {
   header {
     background-size: 60%, cover; } }
