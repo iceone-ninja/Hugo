@@ -68,6 +68,13 @@ header {
   min-height: 480px;
   flex-direction: column;
   padding: 133px 86px 30px; }
+  .featured_album article p {
+    padding: 32px 15px 38px 5px; }
+
+.apple_google a:first-child {
+  padding-left: 4px; }
+.apple_google a {
+  padding-right: 10px; }
 
 .album_container {
   background: url(../img/webwill.png) no-repeat;
