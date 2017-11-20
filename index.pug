@@ -10,7 +10,7 @@ html(lang='en')
     link(rel="stylesheet", href="styles/style.css")
     
   body
-    header
+    header.container-fluid
       nav.navbar.navbar-light.bg-light.fixed-top.top_menu
         .container.top_menu_container.i_p0
           .col.d-flex.top_menu_social
@@ -34,7 +34,46 @@ html(lang='en')
               a.nav-link(href='#') Link
             li.nav-item
               a.nav-link.disabled(href='#') Disabled
-      .test
+    section.half_section.container-fluid.album_section
+      .container.wide_container.i_p0
+        .row
+          article.col-sm-12.col-md-6.d-flex.i_pad
+            h2 Featured Album
+            p
+              | Check out my newest Music Albums. You can easily purchase our music albums or gifts for your friends via 
+              a(href='#') iTunes
+              |  or  
+              a(href='#') Google Play
+            .apple_google.d-flex
+              a(href="#")
+                img(src="img/apple.png", alt="Apple Store")
+              a(href="#")
+                img(src="img/google.png", alt="Google Market")
+          .col-sm-12.col-md-6.album_container.i_p0.i_pad
+            .album_container_cover.d-flex
+              .album_pic
+    section.half_section.container-fluid.video_section
+      .container.wide_container.i_p0
+        .row
+          .col-sm-12.col-md-6.album_container.i_p0.i_pad
+          article.col-sm-12.col-md-6.d-flex.i_pad
+            h2 The Beat (Official MV)
+            p
+              | Music video by Mirotic Artist performing The Beat. Available now on iTunes: 
+              a(href='#') http://smarturl.it/HiTunes?IQid=yt 
+              br
+              |  (c) 2015 DZOAN Entertainment International Limited.
+              
+            .follow_us.d-flex.flex-column
+              h4 Follow Us!
+              .follow_us_links.d-flex
+                a(href="#") Facebook
+                a(href="#") Twitter
+                a(href="#") Youtube
+                a(href="#") Vimeo
+
+
+
 
 
 

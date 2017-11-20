@@ -31,7 +31,7 @@ h2 {
   text-align: left; }
 
 p {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   color: #959595;
   font-size: 18px;
   font-weight: 300;
@@ -98,6 +98,23 @@ header {
 
 .video_section article {
   padding: 133px 55px 30px 112px; }
+  .video_section article p {
+    margin-bottom: 0; }
+
+.follow_us h4 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #959595;
+  font-weight: bold;
+  line-height: 1.714;
+  text-align: left; }
+
+.follow_us a {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #959595;
+  line-height: 1.714;
+  text-align: left; }
 
 @media only screen and (max-width: 575px) {
   header {
