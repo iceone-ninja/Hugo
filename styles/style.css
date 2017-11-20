@@ -38,6 +38,9 @@ p {
   line-height: 30px;
   text-align: left; }
 
+.row {
+  margin: 0; }
+
 header {
   background: url(../img/fjump.png) no-repeat center, url(../img/header.jpg) no-repeat center 80px;
   background-size: 70%, cover;
@@ -70,7 +73,7 @@ header {
   max-width: 720px;
   min-height: 480px;
   flex-direction: column;
-  padding: 133px 88px 30px 9vw;
+  padding: 60px 88px 30px 7vw;
   justify-content: center;
   align-items: end; }
   .half_section article p {
@@ -98,10 +101,8 @@ header {
   background: url(../img/beat.png) no-repeat left, url(../img/disc.png) no-repeat right;
   margin-left: 60px; }
 
-.video_section article {
-  padding: 133px 55px 30px 112px; }
-  .video_section article p {
-    margin-bottom: 0; }
+.video_section article p {
+  margin-bottom: 0; }
 
 .follow_us h4 {
   font-size: 14px;
@@ -157,8 +158,5 @@ header {
 @media only screen and (min-width: 1200px) {
   header {
     background-size: 60%, cover; } }
-@media only screen and (min-width: 1442px) {
-  .album_container {
-    flex: 0 0 49%; } }
 
 /*# sourceMappingURL=style.css.map */
