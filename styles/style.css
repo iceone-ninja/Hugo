@@ -16,6 +16,9 @@ body {
 .container {
   max-width: 1200px; }
 
+.wide_container {
+  max-width: 1440px; }
+
 .i_p0 {
   padding: 0; }
 
@@ -63,12 +66,12 @@ header {
 #navbarToggleExternalContent {
   margin-top: 80px; }
 
-.featured_album article {
+.half_section article {
   max-width: 720px;
   min-height: 480px;
   flex-direction: column;
-  padding: 133px 86px 30px; }
-  .featured_album article p {
+  padding: 133px 88px 30px 85px; }
+  .half_section article p {
     padding: 32px 15px 38px 5px; }
 
 .apple_google a:first-child {
@@ -91,21 +94,43 @@ header {
   min-width: 370px;
   height: 270px;
   background: url(../img/beat.png) no-repeat left, url(../img/disc.png) no-repeat right;
-  margin-left: 40px; }
+  margin-left: 60px; }
 
-@media (max-width: 575px) {
+.video_section article {
+  padding: 133px 55px 30px 112px; }
+
+@media only screen and (max-width: 575px) {
+  header {
+    background-size: 90%, cover; }
+
+  .featured_album article {
+    padding: 70px 35px 30px; }
+
+  h2 {
+    line-height: 50px; }
+
+  .top_menu_social a {
+    padding-right: 15px; } }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   header {
     background-size: 90%, cover; } }
-@media (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 790px) {
+  .i_pad {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+@media only screen and (min-width: 791px) and (max-width: 991px) {
   header {
-    background-size: 90%, cover; } }
-@media (min-width: 768px) and (max-width: 991px) {
+    background-size: 90%, cover; }
+
+  h2 {
+    line-height: 50px; } }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   header {
-    background-size: 90%, cover; } }
-@media (min-width: 992px) and (max-width: 1199px) {
-  header {
-    background: url(../img/fjump.png) no-repeat center 350px, url(../img/header.jpg) no-repeat center 80px; } }
-@media (min-width: 1200px) {
+    background: url(../img/fjump.png) no-repeat center 350px, url(../img/header.jpg) no-repeat center 80px; }
+
+  h2 {
+    line-height: 50px; } }
+@media only screen and (min-width: 1200px) {
   header {
     background-size: 60%, cover; } }
 

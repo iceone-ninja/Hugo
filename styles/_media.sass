@@ -1,22 +1,36 @@
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px)
+@media only screen and (max-width: 575px)
   header
     background-size: 90%, cover
+  .featured_album article
+    padding: 70px 35px 30px
+  h2
+    line-height: 50px
+  .top_menu_social a
+    padding-right: 15px
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767px)
+@media only screen and (min-width: 576px) and (max-width: 767px)
   header
     background-size: 90%, cover
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px)
+@media only screen and (min-width: 768px) and (max-width: 790px)
+  .i_pad
+    flex: 0 0 100%
+    max-width: 100%
+@media only screen and (min-width: 791px) and (max-width: 991px)
   header
     background-size: 90%, cover
+  h2
+    line-height: 50px 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px)
+@media only screen and (min-width: 992px) and (max-width: 1199px)
   header
-    background: url(../img/fjump.png) no-repeat center 350px, url(../img/header.jpg) no-repeat center 80px 
+    background: url(../img/fjump.png) no-repeat center 350px, url(../img/header.jpg) no-repeat center 80px
+  h2
+    line-height: 50px 
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px)
+@media only screen and (min-width: 1200px)
   header
     background-size: 60%, cover

@@ -3,7 +3,7 @@
 
 
 
-// COMMON
+// COMMON=============================================
 body
   display: flex
   flex-direction: column
@@ -11,6 +11,8 @@ body
   min-width: 360px
 .container
   max-width: 1200px
+.wide_container
+  max-width: 1440px
 .i_p0
   padding: 0
 h2
@@ -27,7 +29,7 @@ p
   font-weight: 300
   line-height: 30px
   text-align: left
-// HEADER
+// HEADER=============================================
 header
   background: url(../img/fjump.png) no-repeat center, url(../img/header.jpg) no-repeat center 80px
   background-size: 70%, cover
@@ -56,12 +58,13 @@ header
       color: $nav-color
 #navbarToggleExternalContent
   margin-top: 80px
-// ALBUM SECTION
-.featured_album article
+
+// ALBUM SECTION=============================================
+.half_section article
   max-width: 720px
   min-height: 480px
   flex-direction: column
-  padding: 133px 86px 30px
+  padding: 133px 88px 30px 85px
   & p
     padding: 32px 15px 38px 5px
 .apple_google
@@ -85,9 +88,11 @@ header
   min-width: 370px
   height: 270px
   background: url(../img/beat.png) no-repeat left, url(../img/disc.png) no-repeat right
-  margin-left: 40px
+  margin-left: 60px
 
-
+// VIDEO SECTION=============================================
+.video_section article
+  padding: 133px 55px 30px 112px
 
 // MEDIA
 @import 'media'
