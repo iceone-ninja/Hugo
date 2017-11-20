@@ -70,7 +70,9 @@ header {
   max-width: 720px;
   min-height: 480px;
   flex-direction: column;
-  padding: 133px 88px 30px 85px; }
+  padding: 133px 88px 30px 9vw;
+  justify-content: center;
+  align-items: end; }
   .half_section article p {
     padding: 32px 15px 38px 5px; }
 
@@ -127,7 +129,12 @@ header {
     line-height: 50px; }
 
   .top_menu_social a {
-    padding-right: 15px; } }
+    padding-right: 15px; }
+
+  .album_pic {
+    margin-left: 0px;
+    min-width: 80vw;
+    background-size: 70%; } }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   header {
     background-size: 90%, cover; } }
@@ -150,5 +157,8 @@ header {
 @media only screen and (min-width: 1200px) {
   header {
     background-size: 60%, cover; } }
+@media only screen and (min-width: 1442px) {
+  .album_container {
+    flex: 0 0 49%; } }
 
 /*# sourceMappingURL=style.css.map */

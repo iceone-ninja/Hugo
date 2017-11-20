@@ -38,17 +38,18 @@ html(lang='en')
       .container.wide_container.i_p0
         .row
           article.col-sm-12.col-md-6.d-flex.i_pad
-            h2 Featured Album
-            p
-              | Check out my newest Music Albums. You can easily purchase our music albums or gifts for your friends via 
-              a(href='#') iTunes
-              |  or  
-              a(href='#') Google Play
-            .apple_google.d-flex
-              a(href="#")
-                img(src="img/apple.png", alt="Apple Store")
-              a(href="#")
-                img(src="img/google.png", alt="Google Market")
+            .mini_container.d-flex.flex-column
+              h2 Featured Album
+              p
+                | Check out my newest Music Albums. You can easily purchase our music albums or gifts for your friends via 
+                a(href='#') iTunes
+                |  or  
+                a(href='#') Google Play
+              .apple_google.d-flex
+                a(href="#")
+                  img(src="img/apple.png", alt="Apple Store")
+                a(href="#")
+                  img(src="img/google.png", alt="Google Market")
           .col-sm-12.col-md-6.album_container.i_p0.i_pad
             .album_container_cover.d-flex
               .album_pic
