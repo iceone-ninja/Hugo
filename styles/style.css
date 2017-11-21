@@ -102,7 +102,8 @@ header {
   margin-left: 60px; }
 
 .video_section article p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-left: 0; }
 
 .follow_us h4 {
   font-size: 14px;
@@ -116,8 +117,17 @@ header {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   color: #959595;
-  line-height: 1.714;
-  text-align: left; }
+  line-height: 1.1;
+  text-align: left;
+  padding: 0 8px 0;
+  border-right: 2px solid #c7c7c7; }
+  .follow_us a:first-child {
+    padding-left: 0; }
+  .follow_us a:last-child {
+    border: none; }
+
+.follow_us_links {
+  height: 15px; }
 
 @media only screen and (max-width: 575px) {
   header {
