@@ -119,8 +119,63 @@ header
     border: none
 .follow_us_links
   height: 15px
-
-
+// EVENT SECTION=============================================
+.event_section
+  min-height: 321px
+  & .wide_container, & .row, & .event_half_section
+    min-height: 321px
+.event_half_section
+  justify-content: flex-start
+  align-items: center
+.event_half_section_subcontainer
+  min-height: 107px
+  flex-basis: 600px
+  justify-content: space-around
+  & .event_time
+    height: 107px
+    flex-basis: 385px
+    justify-content: space-between
+    align-items: flex-start
+    & .event_time_capture
+      font-family: Roboto
+      color:  $p-color
+      font-size: 18px
+      font-weight: 300
+      text-align: left
+      padding-top: 34px
+    & .event_time_header
+      font-family: Roboto
+      color:  $h2-color
+      font-size: 48px
+      font-weight: 100
+      line-height: 30px
+      text-align: left
+      margin-top: 26px
+.time_block
+  height: 107px
+  width: 170px
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  & .number
+    font-family: Roboto
+    color:  $h2-color
+    font-size: 48px
+    font-weight: 100
+    line-height: 30px
+    text-align: left
+    margin-top: 26px
+  & .text
+    font-family: Roboto
+    color:  $p-color
+    font-size: 16px
+    font-weight: 300
+    text-align: center
+    padding-top: 33px
+// INSTAGRAM SECTION=============================================
+.instagram
+  min-height: 480px
+  
 // MEDIA
 @import 'media'
 
