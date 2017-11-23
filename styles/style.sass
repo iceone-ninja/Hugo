@@ -174,8 +174,73 @@ header
     padding-top: 33px
 // INSTAGRAM SECTION=============================================
 .instagram
-  min-height: 480px
-  
+  height: 480px
+  overflow: hidden
+.i_divider
+  height: 0
+.insta_block
+  width: 240px
+  height: 240px
+  padding: 0px
+  background-image: url(../img/Layer_3.png)
+  background-size: cover
+.insta_row
+  position: relative
+.cover_block
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  justify-content: center
+  align-content: center
+  align-items: center
+.insta_cover
+  width: 320px
+  height: 180px
+  background: rgb(51,89,172) //Old browsers
+  background: -moz-linear-gradient(left, rgba(51,89,172,1) 0%, rgba(27,162,217,1) 100%)//FF3.6-15
+  background: -webkit-linear-gradient(left, rgba(51,89,172,1) 0%,rgba(27,162,217,1) 100%)//Chrome10-25,Safari5.1-6
+  background: linear-gradient(to right, rgba(51,89,172,1) 0%,rgba(27,162,217,1) 100%)//W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3359ac', endColorstr='#1ba2d9',GradientType=1 )
+  &>*
+    font-size: 48px
+    font-family: "Roboto", sans-serif
+    color: #ffffff
+    line-height: 30px
+    text-align: center
+    font-weight: 100
+  & i
+    margin-bottom: 28px
+//FOOTER
+footer
+  height: 80px
+  justify-content: space-between
+  & .container
+    height: 80px
+  & .footer_logo
+    flex-grow: 2
+.footer_logo
+  & a
+    margin-right: 64px
+  & span
+    font-family: Roboto, sans-serif
+    color:  $p-color
+    font-size: 14px
+    font-weight: 300
+    line-height: 30px
+    text-align: center
+.footer_social
+  justify-content: flex-end
+  & a
+    text-decoration: none
+    color: $p-color
+    padding-right: 29px
+    &:hover, &:active
+      text-decoration: none
+    &:hover
+      color: $link-hover-color
+
 // MEDIA
 @import 'media'
 
