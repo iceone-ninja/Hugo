@@ -182,7 +182,7 @@ header
   width: 240px
   height: 240px
   padding: 0px
-  background-image: url(../img/Layer_3.png)
+  // background-image: url(../img/Layer_3.png)
   background-size: cover
 .insta_row
   position: relative
@@ -212,6 +212,13 @@ header
     font-weight: 100
   & i
     margin-bottom: 28px
+  &:hover
+    text-decoration: none
+
+@for $i from 1 to 13
+  .i_instimg#{$i}
+    background-image: url(../img/Layer_#{$i}.png)
+
 //FOOTER
 footer
   height: 80px

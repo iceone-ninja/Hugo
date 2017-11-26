@@ -196,7 +196,6 @@ header {
   width: 240px;
   height: 240px;
   padding: 0px;
-  background-image: url(../img/Layer_3.png);
   background-size: cover; }
 
 .insta_row {
@@ -229,6 +228,44 @@ header {
     font-weight: 100; }
   .insta_cover i {
     margin-bottom: 28px; }
+  .insta_cover:hover {
+    text-decoration: none; }
+
+.i_instimg1 {
+  background-image: url(../img/Layer_1.png); }
+
+.i_instimg2 {
+  background-image: url(../img/Layer_2.png); }
+
+.i_instimg3 {
+  background-image: url(../img/Layer_3.png); }
+
+.i_instimg4 {
+  background-image: url(../img/Layer_4.png); }
+
+.i_instimg5 {
+  background-image: url(../img/Layer_5.png); }
+
+.i_instimg6 {
+  background-image: url(../img/Layer_6.png); }
+
+.i_instimg7 {
+  background-image: url(../img/Layer_7.png); }
+
+.i_instimg8 {
+  background-image: url(../img/Layer_8.png); }
+
+.i_instimg9 {
+  background-image: url(../img/Layer_9.png); }
+
+.i_instimg10 {
+  background-image: url(../img/Layer_10.png); }
+
+.i_instimg11 {
+  background-image: url(../img/Layer_11.png); }
+
+.i_instimg12 {
+  background-image: url(../img/Layer_12.png); }
 
 footer {
   height: 80px;
@@ -288,14 +325,27 @@ footer {
     background-size: 90%, cover; }
 
   h2 {
-    line-height: 50px; } }
+    line-height: 50px;
+    font-size: 42px; }
+
+  .i_pad {
+    flex: 0 0 100%;
+    max-width: 100%; } }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   header {
     background: url(../img/fjump.png) no-repeat center 350px, url(../img/header.jpg) no-repeat center 80px; }
 
   h2 {
-    line-height: 50px; } }
-@media only screen and (min-width: 1200px) {
+    line-height: 50px;
+    font-size: 42px; } }
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  header {
+    background-size: 60%, cover; }
+
+  h2 {
+    line-height: 50px;
+    font-size: 42px; } }
+@media only screen and (max-width: 1301px) {
   header {
     background-size: 60%, cover; } }
 
