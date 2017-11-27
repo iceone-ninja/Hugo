@@ -12,6 +12,10 @@
     margin-left: 0px
     min-width: 80vw
     background-size: 70%
+  .footer_logo span
+    display: none
+  div.timer_div
+    display: none !important
 
 // Small devices (landscape phones, 576px and up)
 @media only screen and (min-width: 576px) and (max-width: 767px)
@@ -38,6 +42,7 @@
   h2
     line-height: 50px 
     font-size: 42px
+  
 
 // Extra large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) and (max-width: 1300px)
@@ -49,39 +54,43 @@
 @media only screen and (max-width: 1301px)
   header
     background-size: 60%, cover
+//=====================================================================================================================================
+
+/*==========  Desktop First Method  ==========
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1300px)
+
+
+@media only screen and (max-width: 1042px)
+
+
+/* Medium Devices, Desktops
+@media only screen and (max-width: 992px)
+.album_section .row, .video_section .row
+  justify-content: center
+article .mini_container
+  justify-content: center
+  align-items: center
+.mini_container h2, .mini_container p
+  text-align: center
+.footer_logo
+  justify-content: space-between
+  & span
+    font-size: 0.6em
+section.event_section div.event_half_section
+  justify-content: center !important
 
 
 
+/* Small Devices, Tablets
+@media only screen and (max-width: 767px)
 
+/* Extra Small Devices, Phones
+@media only screen and (max-width: 480px)
 
-
-
-
-
-// /*==========  Desktop First Method  ==========
-
-// /* Large Devices, Wide Screens
-// @media only screen and (max-width: 1300px)
-//   h2
-//     line-height: 50px 
-//     font-size: 45px
-
-
-// @media only screen and (max-width: 1042px)
-
-
-// /* Medium Devices, Desktops
-// @media only screen and (max-width: 992px)
-
-
-// /* Small Devices, Tablets
-// @media only screen and (max-width: 767px)
-
-// /* Extra Small Devices, Phones
-// @media only screen and (max-width: 480px)
-
-// /* Custom, iPhone Retina
-// @media only screen and (max-width: 320px)
+/* Custom, iPhone Retina
+@media only screen and (max-width: 320px)
 
 // /*==========  Mobile First Method  ==========
 

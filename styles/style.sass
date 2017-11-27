@@ -5,10 +5,11 @@
 
 // COMMON=============================================
 body
-  display: flex
-  flex-direction: column
-  justify-content: center
-  min-width: 360px
+  // display: flex
+  // flex-direction: column
+  // justify-content: center
+  float: left
+  min-width: 100%
 .container
   max-width: 1200px
 .wide_container
@@ -38,7 +39,8 @@ header
   min-height: 900px
   & nav //NAV
     height: 80px
-
+div.bg-light, nav.bg-light
+  background-color: rgba(255,255,255,0.95) !important
 .top_menu
   &_container
   justify-content: space-between
@@ -60,6 +62,25 @@ header
       color: $nav-color
 #navbarToggleExternalContent
   margin-top: 80px
+.menu_list
+  & li
+    height: 60px
+    width: 60%
+    display: flex
+    justify-content: center
+    align-items: center
+    &:hover
+      background: rgba(255, 255, 255, 1)
+      background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(217, 235, 255, 0.54) 46%, rgba(237, 237, 237, 0.33) 67%, rgba(237, 237, 237, 0) 100%)
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(46%, rgba(217, 235, 255, 0.54)), color-stop(67%, rgba(237, 237, 237, 0.33)), color-stop(100%, rgba(237, 237, 237, 0)))
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(217, 235, 255, 0.54) 46%, rgba(237, 237, 237, 0.33) 67%, rgba(237, 237, 237, 0) 100%)
+      background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(217, 235, 255, 0.54) 46%, rgba(237, 237, 237, 0.33) 67%, rgba(237, 237, 237, 0) 100%)
+      background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(217, 235, 255, 0.54) 46%, rgba(237, 237, 237, 0.33) 67%, rgba(237, 237, 237, 0) 100%)
+      background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(217, 235, 255, 0.54) 46%, rgba(237, 237, 237, 0.33) 67%, rgba(237, 237, 237, 0) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 )
+      & a
+        text-transform: uppercase
+
 
 // ALBUM SECTION=============================================
 .half_section article
@@ -153,7 +174,7 @@ header
       margin-top: 26px
 .time_block
   height: 107px
-  width: 170px
+  max-width: 170px
   flex-direction: column
   justify-content: space-between
   align-items: center
