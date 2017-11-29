@@ -27,12 +27,12 @@ html(lang='en')
         .bg-light
           ul.nav.flex-column.justify-content-center.align-items-center.menu_list
             li.nav-item
-              a.nav-link.active(href='#') Listen Album
+              a.nav-link.active(href='#album') Listen Album
             li.nav-item
-              a.nav-link(href='#') Watch Video
+              a.nav-link(href='#video') Watch Video
             li.nav-item
-              a.nav-link(href='#') Follow!
-    section.half_section.container-fluid.album_section
+              a.nav-link(href='#insta') Follow!
+    section#album.half_section.container-fluid.album_section
       .container.wide_container.i_p0
         .row
           article.col-sm-12.col-md-6.d-flex.i_pad
@@ -51,10 +51,12 @@ html(lang='en')
           .col-sm-12.col-md-12.col-lg-6.album_container.i_p0.i_pad
             .album_container_cover.d-flex
               .album_pic
-    section.half_section.container-fluid.video_section
+    section#video.half_section.container-fluid.video_section
       .container.wide_container.i_p0
         .row
-          .col-sm-12.col-md-12.col-lg-6.album_container.i_p0.i_pad
+          .col-sm-12.col-md-12.col-lg-6.album_container.i_p0.i_pad.d-flex.justify-content-center.align-items-center.video_container
+            .adaptive-wrap.d-flex.justify-content-center
+              iframe(width='640', height='360', src='https://www.youtube.com/embed/-3tDvMG87Ro?rel=0', frameborder='0', allowfullscreen='1')
           article.col-sm-12.col-md-6.d-flex.i_pad
             .mini_container.d-flex.flex-column
               h2 The Beat (Official&nbsp;MV)
@@ -74,7 +76,7 @@ html(lang='en')
     section.half_section.container-fluid.event_section
       .container.wide_container.i_p0
         .row
-          .col-sm-12.col-md-12.col-lg-6.d-flex.event_half_section.i_p0.justify-content-end
+          .col-12.col-sm-6.col-md-6.col-lg-6.d-flex.event_half_section.i_p0.justify-content-end
             .event_half_section_subcontainer.d-flex
               .event_time.d-flex.flex-column
                 span.event_time_header Next Event In:
@@ -84,7 +86,7 @@ html(lang='en')
               .time_block.d-flex
                 span.number 25
                 span.text Days
-          .col-sm-12.col-md-12.col-lg-6.d-flex.event_half_section.i_p0.timer_div
+          .col-12.col-sm-6.col-md-6.col-lg-6.d-flex.event_half_section.i_p0.timer_div
             .event_half_section_subcontainer.d-flex
               .time_block.d-flex
                 span.number 16
@@ -95,7 +97,7 @@ html(lang='en')
               .time_block.d-flex
                 span.number 16
                 span.text Seconds
-    section.half_section.container-fluid.instagram.d-flex
+    section#insta.half_section.container-fluid.instagram.d-flex
       .container.wide_container.i_p0
         .row.insta_row
           .col-sm-12.col-md-12.col-lg-12.d-flex.col-xl-6.i_p0.flex-wrap

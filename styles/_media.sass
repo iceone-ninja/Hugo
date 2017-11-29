@@ -2,10 +2,12 @@
 @media only screen and (max-width: 575px)
   header
     background-size: 90%, cover
+    min-height: 640px
   .featured_album article
     padding: 70px 35px 30px
   h2
     line-height: 50px
+    font-size: 40px
   .top_menu_social a
     padding-right: 15px
   .album_pic
@@ -16,6 +18,14 @@
     display: none
   div.timer_div
     display: none !important
+  .album_container
+    min-height: 320px
+  .event_section
+    min-height: 320px
+  .event_section .wide_container, .event_section .row, .event_section .event_half_section
+    min-height: 260px
+
+
 
 // Small devices (landscape phones, 576px and up)
 @media only screen and (min-width: 576px) and (max-width: 767px)
@@ -35,6 +45,7 @@
   .i_pad
     flex: 0 0 100%
     max-width: 100%
+  
 // Large devices (desktops, 992px and up)
 @media only screen and (min-width: 992px) and (max-width: 1199px)
   header
@@ -42,7 +53,6 @@
   h2
     line-height: 50px 
     font-size: 42px
-  
 
 // Extra large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) and (max-width: 1300px)
@@ -67,24 +77,38 @@
 
 /* Medium Devices, Desktops
 @media only screen and (max-width: 992px)
-.album_section .row, .video_section .row
-  justify-content: center
-article .mini_container
-  justify-content: center
-  align-items: center
-.mini_container h2, .mini_container p
-  text-align: center
-.footer_logo
-  justify-content: space-between
-  & span
-    font-size: 0.6em
-section.event_section div.event_half_section
-  justify-content: center !important
+  .album_section .row, .video_section .row
+    justify-content: center 
+  article .mini_container
+    justify-content: center
+    align-items: center
+  .mini_container h2, .mini_container p
+    text-align: center
+  .footer_logo
+    justify-content: space-between
+    & span
+      font-size: 0.6em
+  section.event_section div.event_half_section
+    justify-content: center !important
+  .follow_us h4
+    text-align: center
+  .time_block .number, .event_half_section_subcontainer .event_time .event_time_header
+    font-size: 35px
+  .time_block .text, .event_half_section_subcontainer .event_time .event_time_capture
+    font-size: 11px
+  .mini_container
+    margin-left: 0
+  .event_section
+    min-height: 205px
+  .event_section .wide_container, .event_section .row, .event_section .event_half_section
+    min-height: 110px
 
 
 
 /* Small Devices, Tablets
 @media only screen and (max-width: 767px)
+  p
+    font-size: 16px
 
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 480px)

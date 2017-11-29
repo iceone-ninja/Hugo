@@ -21,7 +21,7 @@ h2
   color:  $h2-color
   font-size: 48px
   font-weight: 100
-  line-height: 30px
+  line-height: 50px
   text-align: left
 p
   font-family: Roboto, sans-serif
@@ -32,6 +32,8 @@ p
   text-align: left
 .row
   margin: 0
+.mini_container
+  margin-left: 45px
 // HEADER=============================================
 header
   background: url(../img/fjump.png) no-repeat center, url(../img/header.jpg) no-repeat center 80px
@@ -87,7 +89,7 @@ div.bg-light, nav.bg-light
   max-width: 720px
   min-height: 480px
   flex-direction: column
-  padding: 60px 88px 30px 7vw
+  // padding: 60px 88px 30px 7vw
   justify-content: center
   align-items: end
   & p
@@ -140,6 +142,26 @@ div.bg-light, nav.bg-light
     border: none
 .follow_us_links
   height: 15px
+.adaptive-wrap 
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 30px
+  height: 0
+  overflow: hidden
+  width: 100%
+.adaptive-wrap iframe
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+.video_container
+  background-image: none
+  background-color: #000000
+
+
 // EVENT SECTION=============================================
 .event_section
   min-height: 321px
@@ -151,7 +173,7 @@ div.bg-light, nav.bg-light
 .event_half_section_subcontainer
   min-height: 107px
   flex-basis: 600px
-  justify-content: space-around
+  justify-content: space-evenly
   & .event_time
     height: 107px
     flex-basis: 385px
