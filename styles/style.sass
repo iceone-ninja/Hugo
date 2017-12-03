@@ -51,11 +51,20 @@ div.bg-light, nav.bg-light
     & a
       text-decoration: none
       color: $nav-color
-      padding-right: 29px
+      padding-right: 10px
+      width: 35px
+      height: 35px
+      text-align: center
+      padding-left: 9px
+      padding-top: 8px
+      border: 1px solid #eaeaea
+      margin: 2px
+      border-radius: 5px
       &:hover, &:active
       text-decoration: none
       &:hover
         color: $link-hover-color
+        background-color: #fafafa
   &_logo
     justify-content: center
   &_button
@@ -71,6 +80,11 @@ div.bg-light, nav.bg-light
     display: flex
     justify-content: center
     align-items: center
+    border: 1px solid #cfd7e7
+    border-radius: 5px
+    margin: 2px
+    &:last-child
+      margin-bottom: 10px
     &:hover
       background: rgba(255, 255, 255, 1)
       background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(217, 235, 255, 0.54) 46%, rgba(237, 237, 237, 0.33) 67%, rgba(237, 237, 237, 0) 100%)
@@ -82,6 +96,11 @@ div.bg-light, nav.bg-light
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 )
       & a
         text-transform: uppercase
+.navbar-toggler
+  margin-top: 2px
+  padding: 0.25rem .75rem
+  font-size: 1.25rem
+  line-height: 1.7
 
 
 // ALBUM SECTION=============================================

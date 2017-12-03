@@ -59,10 +59,19 @@ div.bg-light, nav.bg-light {
     .top_menu_social a {
       text-decoration: none;
       color: #252525;
-      padding-right: 29px;
+      padding-right: 10px;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      padding-left: 9px;
+      padding-top: 8px;
+      border: 1px solid #eaeaea;
+      margin: 2px;
+      border-radius: 5px;
       text-decoration: none; }
       .top_menu_social a:hover {
-        color: #374290; }
+        color: #374290;
+        background-color: #fafafa; }
   .top_menu_logo {
     justify-content: center; }
   .top_menu_button {
@@ -78,7 +87,12 @@ div.bg-light, nav.bg-light {
   width: 60%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border: 1px solid #cfd7e7;
+  border-radius: 5px;
+  margin: 2px; }
+  .menu_list li:last-child {
+    margin-bottom: 10px; }
   .menu_list li:hover {
     background: white;
     background: -moz-radial-gradient(center, ellipse cover, white 0%, rgba(217, 235, 255, 0.54) 46%, rgba(237, 237, 237, 0.33) 67%, rgba(237, 237, 237, 0) 100%);
@@ -90,6 +104,12 @@ div.bg-light, nav.bg-light {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 ); }
     .menu_list li:hover a {
       text-transform: uppercase; }
+
+.navbar-toggler {
+  margin-top: 2px;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.7; }
 
 .half_section article {
   max-width: 720px;
@@ -361,7 +381,7 @@ footer {
     display: none; }
 
   div.timer_div {
-    display: none !important; }
+    margin-bottom: 10px; }
 
   .album_container {
     min-height: 320px; }
@@ -370,7 +390,16 @@ footer {
     min-height: 320px; }
 
   .event_section .wide_container, .event_section .row, .event_section .event_half_section {
-    min-height: 260px; } }
+    min-height: 260px; }
+
+  div.mobile_number_h {
+    display: none !important; }
+
+  div.mobile_number_w {
+    display: flex !important; }
+
+  .event_half_section_subcontainer .event_time {
+    align-items: center; } }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   header {
     background-size: 90%, cover; } }
@@ -450,6 +479,9 @@ footer {
   p {
     font-size: 16px; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .top_menu_social {
+    padding: 0; } }
 /* Custom, iPhone Retina */
 
 /*# sourceMappingURL=style.css.map */
